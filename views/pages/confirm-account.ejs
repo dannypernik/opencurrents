@@ -13,25 +13,31 @@
             <h2 class="title">Confirm account</h2>
         </div>
         
-        <div class="row half-margin-bottom center">
-          <div class="small-12 medium-8 small-centered columns">
-            <p>Please verify your email address by entering the 6-digit code sent to <strong>email@address.com</strong> or click the verification link in the email.</p>
+        <div class="row center half-margin-bottom">
+          <div class="small-12 medium-6 small-centered columns">
+            <p class="small">To verify your account, enter the 6-digit code sent to <strong>email@address.com</strong> or click the link in the email.</p>
           </div>
         </div>
         
-        <div class="row one-margin-bottom center">
+        <div class="row center half-margin-bottom">
           <div class="medium-6 small-centered columns">
             <p class="inline">Verification code: </p>
             <input id="verify-email" name="verify-email" class="inline-input" type="number" placeholder="123456" />
           </div>
         </div>
-        
-        <div class="row one-margin-bottom center">
-          <div class="small-10 medium-5 large-4 small-centered columns">
-            <input type="password" placeholder="Set password"/>
-            <input type="password" placeholder="Verify password"/>
+
+        <div class="row no-margin-bottom">
+          <p class="half-margin-bottom">Also, choose a password:</p>
+
+          <div class="input-left small-6 medium-3 medium-offset-3 columns">
+            <input type="password" placeholder="Set password" class="half-margin-bottom"/>
+          </div>
+          <div class="input-right small-6 medium-3 columns end">
+            <input type="password" placeholder="Verify password" class="half-margin-bottom"/>
           </div>
         </div>
+
+        <label class="one-margin-bottom">8+ chars including UPPER, lower, 123, %#@!</label>
         
         <div class="row center">
           <input type="submit" class="button round" value="Confirm"/>

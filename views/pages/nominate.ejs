@@ -9,16 +9,57 @@
     
     <div id="container" class="js-close-any" canvas="container">
       <div id="wrapper">
-        <div class="row">
-          <h2 class="title">Nominate an organization</h2>
-        </div>
-        
-        <div class="row one-margin-bottom center">
+        <div class="row center">
           <div class="small-12 medium-8 small-centered columns">
-            <p class="">Introduce openCurrents to an organization who could benefit from paying their volunteers with Currents - for free. (Really, who wouldn't benefit?)</p>
+            <h3 class="title">Nominate an organization</h3>
+            <p>Introduce openCurrents to an organization that could benefit from a cost-free way to compensate volunteers and interns.</p>
           </div>
         </div>
-        
+
+        <div class="row center">
+          <div class="medium-8 small-centered columns">
+            <input id="recipient-email" type="email" placeholder="Recipient email"/>
+          </div>
+        </div>
+
+        <div class="row left">
+          <div class="medium-8 small-centered columns">
+            <span class="half-margin-left half-margin-right">Hi</span><input id="recipient-name" type="text" placeholder="Recipient first name"/><span> ,</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="medium-8 small-centered columns">
+
+            <textarea id="nominate-text" rows="5"></textarea>
+
+
+            <p>Share your unique referral link to get credit for the introduction:</p>
+            <p>
+              <span id="ref-link"><strong><a href="">www.opencurrents.com/referral-id</a></strong></span><button id="copy-link" data-text-swap="Copied" data-clipboard-target="ref-link" class="one-margin-left one-margin-top button round small">Copy link</button>
+            </p>
+            <p>When the leader of this organization activates the account, you will receive 2 Currents for making the introduction.</p>
+          </div>
+        </div>
+
+        <div class="row half-margin-bottom center">
+          <div class="small-12 medium-6 small-centered columns">
+            <input type="text" class="center" name="org-name" placeholder="Organization name"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="medium-8 small-centered columns">
+            <div id="org-type-div">
+              <span>This organization is</span>
+              <select id="org-type">
+                <option value="nonprofit">a registered nonprofit</option>
+                <option value="business">a registered business</option>
+                <option value="unregistered">not registered</option>
+              </select>
+            </div>
+          </div>
+        </div>
       <div id="push"></div>
     
       <!-- wrapper div-->
@@ -51,6 +92,8 @@
       </div>
     </div>
     
+    <script src="js/ZeroClipboard.min.js" type="text/javascript"></script>
+    <script src="js/copy.js" type="text/javascript"></script>
     
     <script type="text/javascript">
       $(document).ready(function(){

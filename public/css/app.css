@@ -837,3 +837,15 @@ a.list-group-item {
   display: inline-block;
   width: 35px;
 }
+
+/* nominate */
+
+#recipient-name, #recipient-email {
+  display: inline-block;
+  width: 200px;
+}
+
+.button.zeroclipboard-is-hover {
+  background-color: #0b5167;
+  border-color: #0b5167;
+}
