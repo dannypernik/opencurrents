@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/head %>
+  </head>
+  
+  <body>
+    <% include ../partials/header %>
+    
+    <div id="container" class="js-close-any" canvas="container">
+      <div id="wrapper">
+        <div class="row">
+            <h2 class="title">I care most about...</h2>
+        </div>
+        
+        <div id="user-causes" class="row">
+          <div class="medium-8 small-centered columns">
+            <input type="radio" id="user-cause-1" name="user-cause-[]" value="" class="hidden"/>
+              <label for="user-cause-1" class="half-margin-top button round secondary small">Equality</label>
+            <input type="radio" id="user-cause-2" name="user-cause-[]" value="" class="hidden"/>
+              <label for="user-cause-2" class="half-margin-top button round secondary small">Education</label>
+            <input type="radio" id="user-cause-3" name="user-cause-[]" value="" class="hidden"/>
+              <label for="user-cause-3" class="half-margin-top button round secondary small">Nature</label>
+            <input type="radio" id="user-cause-4" name="user-cause-[]" value="" class="hidden"/>
+              <label for="user-cause-4" class="half-margin-top button round secondary small">Health</label>
+            <input type="radio" id="user-cause-5" name="user-cause-[]" value="" class="hidden"/>
+              <label for="user-cause-5" class="half-margin-top button round secondary small">Innovation</label>
+
+            <div class="inline">
+              <input type="radio" id="user-cause-other" name="user-cause-[]" value="" class="hidden"/>
+              <label for="user-cause-other" class="half-margin-top half-margin-right button round secondary small">Other:</label>
+              <input type="text" id="other-cause" class="inline" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row half-margin-top">
+          <div class="small-10 medium-8 small-centered columns">
+            <label>We will help you find organizations who share your mission.</label>
+            <input type="submit" class="one-margin-top button round" value="Save account"/>
+          </div>
+        </div>
+        
+      <div id="push"></div>
+    
+      <!-- wrapper div-->
+      </div>
+      
+      <% include ../partials/footer %>
+            
+    <!--container div -->
+    </div>
+    
+    <div id="bottom-stripe" class="full-width"></div>
+    
+    <div off-canvas="menu right shift" id="menu">
+      <% include ../partials/menu %>
+    </div>
+  
+    <div id="-popup" class="modal center small-12 medium-9 large-7 small-centered columns">
+      <div class="row center">
+        <h3 class="popup-title"></h3>
+      </div>
+      
+      <div class="row">
+        <div class="small-centered medium-10 columns">
+          
+          <p></p>
+          
+          <button class="tax-id-popup_close button round">Okay</button>
+          <a><button class="button round secondary"></button></a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#').popup({
+          vertical: 'top',
+          transition: 'all 0.75s',
+          scrolllock: true,
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#other-cause").click(function() {
+          $("#user-cause-other").prop("checked", true);
+        });
+        
+        $("#user-cause-other").click(function(){
+          $("#other-cause").focus();
+        });
+      });
+    </script>
+    
+    <script src="js/end_scripts.js" type="text/javascript"></script>
+  </body>
+</html>
