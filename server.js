@@ -15,5 +15,5 @@ app.get('/:id', function(req, res) {
   res.render('pages/' + req.params.id);
 });
 
-app.listen(8080);
-console.log('server running on 8080...');
+app.listen(process.env.PORT || 8080);
+console.log('server running...');
