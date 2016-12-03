@@ -3,7 +3,7 @@ var app = express();
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 8080));
 
 app.use(express.static(__dirname + '/public'));
 app.use('/modules', express.static(__dirname + '/node_modules/'));
