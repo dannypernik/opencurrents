@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 .button {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+  font-size: 1rem;
 }
 
 /* Large buttons on small screens */ 
@@ -128,8 +129,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .button:hover, .button:focus {
   color: #ffffff;
-  background-color: #0b5167;
-  border: 1px solid #0b5167;
+  background-color: #0d5f79;
+  border: 1px solid #0d5f79;
 }
 
 .button.secondary {
@@ -746,8 +747,9 @@ a.list-group-item {
 }
 
 #current-amount-div {
-  width: 163px;
+  width: 144px;
   display: block;
+  position: relative;
   margin: auto;
   transition: color 0.25s, fill 0.25s ease-in-out;
 }
@@ -756,25 +758,28 @@ a.list-group-item {
   border-color: #3c93ae;
 }
 
-#current-amount-div:hover #oc-symbol text {
-  fill: #3c93ae;
+#current-amount-div:hover circle {
+  stroke: #3c93ae;
+}
+
+#current-amount-div:hover .symbol-circle {
+  stroke: #3c93ae;
 }
 
 #oc-symbol {
   float: left;
+  height: 32px;
+  margin-top: 0.25rem;
 }
 
-#oc-symbol text {
-  transition: fill 0.25s ease-out;
-}
-
-.symbol-text {
-  fill: #6ab5cc;;
+.symbol-circle {
+  stroke: #6ab5cc;
+  transition: stroke 0.25s ease-out;
 }
 
 .amount-input {
-  width: 120px;
-  margin-left: 5px;
+  width: 100px;
+  color: #3c93ae;
   display: inline;
   border: 0;
   outline: 0;
@@ -791,8 +796,8 @@ a.list-group-item {
   border-bottom: 2px solid #3c93ae;
 }
 
-.amount-input:focus + #oc-symbol .symbol-text {
-  fill: #3c93ae;
+.amount-input:focus + #oc-symbol .symbol-circle {
+  stroke: #3c93ae;
 }
 
 .currency-input {
@@ -804,7 +809,6 @@ a.list-group-item {
   display: inline-block;
   position: absolute;
   top: 8px;
-  left: 13px;
   color: #888888;
 }
 
@@ -821,7 +825,7 @@ a.list-group-item {
 }
 
 .current-price {
-  text-indent: 21px;
+  text-indent: 18px;
   min-width: 60px;
 }
 
@@ -840,12 +844,8 @@ a.list-group-item {
 
 /* nominate */
 
-#recipient-name, #recipient-email {
-  display: inline-block;
-  width: 200px;
-}
-
 .button.zeroclipboard-is-hover {
   background-color: #0b5167;
   border-color: #0b5167;
+  color: #ffffff;
 }

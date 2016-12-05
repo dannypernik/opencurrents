@@ -10,64 +10,67 @@
     <div id="container" class="js-close-any" canvas="container">
       <div id="wrapper">
         <div class="row">
-            <h2 class="title inline">Verify identity</h2><a class="half-margin-left">Why?</a>
+            <h2 class="title inline">Verify identity</h2><a class="why-verify-popup_open half-margin-left">Why?</a>
             <p class="white">Choose how you would like to confirm your identity:</p>
         </div>
-        
-        <div class="row one-margin-bottom">
-          <div class="small-10 medium-5 small-centered columns">
-            <select>
-              <option value="bank">Connect bank account</option>
-              <option value="passport">Passport ID number</option>
-              <option value="ssn">Social security number</option>
-            </select>
-          </div>
-        </div>
-        
-        <div class="row one-margin-bottom">
-          <div class="medium-9 small-centered columns">
-            <p>Full legal name:</p>
-            
-            <div class="input-left small-4 columns">
-              <input type="text" name="first-name" placeholder="First name" class="inline" />
-            </div>
-            
-            <div class="input-middle small-4 columns">
-              <input type="text" name="middle-name" placeholder="Middle (optional)" class="inline" />
-            </div>
-            
-            <div class="input-right small-4 columns">
-              <input type="text" name="last-name" placeholder="Last name" class="inline" />
+
+        <!--<form>-->
+          <div class="row one-margin-bottom">
+            <div class="small-10 medium-5 small-centered columns">
+              <select>
+                <option value="bank">Connect bank account</option>
+                <option value="passport">Passport ID number</option>
+                <option value="ssn">Social security number</option>
+              </select>
             </div>
           </div>
-        </div>
-        
-        <div id="bank-details" class="box row">
-          <div class="medium-6 small-centered columns">
-            <span>Routing number: </span>
-            <input type="number" id="routing-number" name="routing-number" placeholder="123456789" class="inline-input"/>
-            <p>Account number:<input type="number" id="bank-account-number" name="bank-account-number" placeholder="123456789" class="inline-input"/></p>
+          
+          <div class="row one-margin-bottom">
+            <div class="medium-9 small-centered columns">
+              <p>Full legal name:</p>
+              
+              <div class="input-left small-4 columns">
+                <input type="text" name="first-name" placeholder="First name" class="inline" />
+              </div>
+              
+              <div class="input-middle small-4 columns">
+                <input type="text" name="middle-name" placeholder="Middle (optional)" class="inline" />
+              </div>
+              
+              <div class="input-right small-4 columns">
+                <input type="text" name="last-name" placeholder="Last name" class="inline" />
+              </div>
+            </div>
           </div>
-        </div>
-        
-        <div id="passport-details" class="box row one-margin-bottom">
-          <div class="medium-6 small-centered columns">
-            <span>Passport ID: </span>
-            <input type="number" id="passport-id" name="passport-id" class="inline-input" placeholder="123456789"/>
+          
+          <div id="bank-details" class="box row">
+            <div class="medium-6 small-centered columns">
+              <span>Routing number: </span>
+              <input type="number" id="routing-number" name="routing-number" placeholder="123456789" class="inline-input"/>
+              <p>Account number:<input type="number" id="bank-account-number" name="bank-account-number" placeholder="123456789" class="inline-input"/></p>
+            </div>
           </div>
-        </div>
-        
-        <div id="ssn-details" class="box row one-margin-bottom">
-          <div class="medium-6 small-centered columns">
-            <span>SSN:</span>
-            <input type="number" id="social-security-number" name="social-security-number" class="inline-input" placeholder="xxx-xx-xxxx"/>
+          
+          <div id="passport-details" class="box row one-margin-bottom">
+            <div class="medium-6 small-centered columns">
+              <span>Passport ID: </span>
+              <input type="number" id="passport-id" name="passport-id" class="inline-input" placeholder="123456789"/>
+            </div>
           </div>
-        </div>
-        
-        <div class="row">
-          <input type="submit" class="button round" value="Verify">
-          <button class="button secondary round">Cancel</button>
-        </div>
+          
+          <div id="ssn-details" class="box row one-margin-bottom">
+            <div class="medium-6 small-centered columns">
+              <span>SSN:</span>
+              <input type="number" id="social-security-number" name="social-security-number" class="inline-input" placeholder="xxx-xx-xxxx"/>
+            </div>
+          </div>
+          
+          <div class="row">
+            <!--<input type="submit" class="button round" value="Verify">-->
+            <a href="causes"><button class="button round">Verify</button></a>
+            <button class="skip-notify-popup_open button secondary round">Skip</button>
+          </div>
+        <!--</form>-->
         
       <div id="push"></div>
     
@@ -87,7 +90,15 @@
       <div class="row center">
         <h3 class="popup-title">Why we verify identity</h3>
       </div>
-    
+    </div>
+
+    <div id="skip-notify-popup" class="modal center small-12 medium-9 large-7 small-centered columns">
+      <div class="row center">
+        <h3 class="popup-title">Are you sure?</h3>
+        <p class="three-halves-margin-bottom">Please note that identity verification is required before Currents will be added to your account.</p>
+        <button class="skip-notify-popup_close button round">Go back</button>
+        <a href="causes"><button class="button round secondary">Skip for now</button></a>
+      </div>
     </div>
     
     <script type="text/javascript">
@@ -109,7 +120,7 @@
           }
         });
         
-        $('#change-email').popup({
+        $('#why-verify-popup, #skip-notify-popup').popup({
           vertical: 'top',
           transition: 'all 0.75s',
           scrolllock: true,

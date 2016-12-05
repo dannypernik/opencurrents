@@ -161,28 +161,31 @@
       <div class="row center">
         <h2 class="popup-title">Join openCurrents</h2>
       </div>
-      
-      <div class="row one-margin-top">
-        <div class="small-12 medium-9 small-centered columns">    
-          <div class="input-left small-6 columns">
-          <input type="text" name="first_name" placeholder="First name" tabindex="1" />
-          </div>
-          
-          <div class="input-right small-6 columns">
-          <input type="text" name="last_name" placeholder="Last name" tabindex="2" />
-          </div>
-          <div class="small-12 columns">
-          <input type="email" name="email" placeholder="Email address" tabindex="3" />
+
+      <!--<form>-->
+        <div class="row one-margin-top">
+          <div class="small-12 medium-9 small-centered columns">    
+            <div class="input-left small-6 columns">
+            <input type="text" name="first_name" placeholder="First name" tabindex="1" />
+            </div>
+            
+            <div class="input-right small-6 columns">
+            <input type="text" name="last_name" placeholder="Last name" tabindex="2" />
+            </div>
+            <div class="small-12 columns">
+            <input type="email" name="email" placeholder="Email address" tabindex="3" />
+            </div>
           </div>
         </div>
-      </div>
-    
-      <div class="row center half-margin-top">
-        <a href="./pages/verify-email"><button type="submit" class="button large round">Create account</button></a>
-      </div>
+      
+        <div class="row center half-margin-top">
+          <!--<input type="submit" class="button large round" value="Create account"/>-->
+          <a href="confirm-account"><button type="submit" class="button large round">Create account</button></a>
+        </div>
+      <!--</form>-->
     </div>
     
-    <div id="email-box" class="modal center small-12 medium-9 large-7 small-centered columns">
+    <div id="suggestion-box" class="modal center small-12 medium-9 large-7 small-centered columns">
       <div class="row">
         <div class="center small-centered medium-10 columns">
           <h3 class="popup-title">Speak your mind</h3>
@@ -249,7 +252,7 @@
           }
         });
         
-        $('#signup-box, #email-box').popup({
+        $('#signup-box, #suggestion-box').popup({
           vertical: 'top',
           transition: 'all 0.75s',
           scrolllock: false,
