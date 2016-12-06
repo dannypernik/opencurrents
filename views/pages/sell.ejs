@@ -22,14 +22,9 @@
           </div>
           
           <div class="currency-input small-3 medium-2 columns">
-            <svg class="current-placeholder" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="24px" viewBox="11.5 0 75 100" enable-background="new 11.5 0 75 100" xml:space="preserve">
-              <g>
-                <text transform="matrix(1 0 0 1 5.8066 87.1475)" font-family="Cochin-Italic" font-size="112.6105" fill="#999999">C</text>
-                <text transform="matrix(1 0 0 1 29.2212 72.208)" font-family="'IowanOldStyle-Italic'" font-size="80" fill="#999999">o</text>
-              </g>
-            </svg>
+            <img class="current-placeholder" src="images/symbol.svg"/>
             
-            <input id="custom-price" class="current-price" type="number" placeholder="1"/>
+            <input id="custom-price" class="current-price" type="number" placeholder="0"/>
           </div>
           
           <div class="small-3 medium-1 columns end">
@@ -45,16 +40,11 @@
           <div id="product-row-1" class="row left">
             <div class="small-9 medium-7 medium-offset-2 columns">
               <input id="product-quantity-1" name="product-quantity" type="number" class="product-quantity" value="0" placeholder="0"/><span class="half-margin-left">x</span>
-              <button id="product-name-1" class="product-name three-qtr-margin-top button round small">Product name</button>
+              <button id="product-name-1" class="product-name three-qtr-margin-top half-margin-right button round small">Product name</button>
             </div>
             
             <div class="currency-input small-3 medium-2 columns end">
-              <svg class="current-placeholder three-qtr-margin-top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="24px" viewBox="11.5 0 75 100" enable-background="new 11.5 0 75 100" xml:space="preserve">
-                <g>
-                  <text transform="matrix(1 0 0 1 5.8066 87.1475)" font-family="Cochin-Italic" font-size="112.6105" fill="#999999">C</text>
-                  <text transform="matrix(1 0 0 1 29.2212 72.208)" font-family="'IowanOldStyle-Italic'" font-size="80" fill="#999999">o</text>
-                </g>
-              </svg>
+              <img class="current-placeholder three-qtr-margin-top" src="images/symbol.svg"/>
               
               <input id="product-price-1" type="number" class="hidden-input current-price three-qtr-margin-top" placeholder="0" disabled>
             </div>
@@ -69,28 +59,11 @@
 
         <div class="left row">
           <div class="small-offset-7 small-2 columns">
-            <h5 class="half-margin-top">Total:</h5>
+            <h6 class="half-margin-top">Total:</h6>
           </div>
 
           <div class="currency-input small-3 medium-2 columns end">
-            <!--<svg class="current-placeholder" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="24px" viewBox="11.5 0 75 100" enable-background="new 11.5 0 75 100" xml:space="preserve">
-              <g>
-                <text transform="matrix(1 0 0 1 5.8066 87.1475)" font-family="Cochin-Italic" font-size="112.6105" fill="#999999">C</text>
-                <text transform="matrix(1 0 0 1 29.2212 72.208)" font-family="'IowanOldStyle-Italic'" font-size="80" fill="#999999">o</text>
-              </g>
-            </svg>-->
-
-            <svg class="current-placeholder" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="20" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 140 140.13137">
-             <g transform="translate(-396.62 -884.72)">
-              <circle style="stroke:#999999;stroke-width:11;fill:none" cx="466.69" transform="scale(1,-1)" cy="-954.78" r="0"/>
-              <g transform="translate(11.475)">
-               <path d="m509.65 149.95a64.066 64.066 0 0 1 -42.959 16.538 64.066 64.066 0 0 1 -64.066 -64.066 64.066 64.066 0 0 1 64.066 -64.066 64.066 64.066 0 0 1 42.961 16.539" style="stroke:#999999;stroke-width:12;fill:none" transform="translate(0 852.36)"/>
-               <circle cx="466.69" cy="954.78" r="34.558" style="stroke:#999999;stroke-width:11;fill:none"/>
-              </g>
-             </g>
-            </svg>
-
-            
+            <img class="current-placeholder" src="images/symbol.svg"/>
             <input id="product-price-1" type="number" class="hidden-input current-price" placeholder="0" disabled>
           </div>
         </div>
@@ -153,7 +126,7 @@
 
             price = $('#custom-price').val();
 
-            $('#products').prepend('<div id="product-row-'+num+'" class="row left"><div class="small-9 medium-7 medium-offset-2 columns"><input id="product-quantity-'+num+'" name="product-quantity" type="number" class="product-quantity inline" value="1" placeholder="0"/><span class="half-margin-left">x </span><button id="product-name-'+num+'" class="product-name three-qtr-margin-top button round small">'+name+'</button></div><div class="currency-input small-3 medium-2 columns end"><svg class="current-placeholder three-qtr-margin-top" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="24px" viewBox="11.5 0 75 100" enable-background="new 11.5 0 75 100" xml:space="preserve"><g><text transform="matrix(1 0 0 1 5.8066 87.1475)" font-family="Cochin-Italic" font-size="112.6105" fill="#999999">C</text><text transform="matrix(1 0 0 1 29.2212 72.208)" font-family="IowanOldStyle-Italic" font-size="80" fill="#999999">o</text></g></svg><input id="product-price-'+num+'" type="number" class="hidden-input current-price three-qtr-margin-top" placeholder="0" value="'+price+'"" disabled></div></div>');
+            $('#products').prepend('<div id="product-row-'+num+'" class="row left"><div class="small-9 medium-7 medium-offset-2 columns"><input id="product-quantity-'+num+'" name="product-quantity" type="number" class="product-quantity inline" value="1" placeholder="0"/><span class="half-margin-left">x </span><button id="product-name-'+num+'" class="product-name three-qtr-margin-top button round small">'+name+'</button></div><div class="currency-input small-3 medium-2 columns end"><img class="current-placeholder three-qtr-margin-top" src="images/symbol.svg"/><input id="product-price-'+num+'" type="number" class="hidden-input current-price three-qtr-margin-top" placeholder="0" value="'+price+'"" disabled></div></div>');
 
             $('#custom-price').val('');
             $('#require-price').hide();

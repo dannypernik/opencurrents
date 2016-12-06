@@ -11,7 +11,7 @@
       <div id="wrapper">
         <div class="relative row">
             <h3 class="title-sub inline">Set prices</h3><a class="price-help-popup_open half-margin-left">Help</a>
-            <h5 class="subtitle">Suggested rate: 1 Current = $10</h5>
+            <h5 class="subtitle">Suggested rate: $10 = 1 Current</h5>
         </div>
         
         <div class="row half-margin-top one-margin-bottom center">
@@ -28,13 +28,7 @@
             </div>
             
             <div class="currency-input small-3 columns">
-              <svg class="current-placeholder" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 width="18px" height="24px" viewBox="11.5 0 75 100" enable-background="new 11.5 0 75 100" xml:space="preserve">
-              <g>
-                <text transform="matrix(1 0 0 1 5.8066 87.1475)" font-family="Cochin-Italic" font-size="112.6105" fill="#999999">C</text>
-                <text transform="matrix(1 0 0 1 29.2212 72.208)" font-family="'IowanOldStyle-Italic'" font-size="80" fill="#999999">o</text>
-              </g>
-              </svg>
+              <img class="current-placeholder" src="images/symbol.svg"/>
               
               <input id="current-price-1" class="current-price" type="number" placeholder="1"/>
             </div>
@@ -86,7 +80,7 @@
         
         num ++;
         
-        $('#product-div').append('<div class="small-6 columns"><input id="product-name-'+num+'" type="text" placeholder="Item name"/></div><div class="currency-input small-3 columns"><span class="dollar-placeholder">$</span><input id="dollar-price-'+num+'" class="dollar-price" type="number" placeholder="10"/></div><div class="currency-input small-3 columns"><svg class="current-placeholder" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="18px" height="24px" viewBox="11.5 0 75 100" enable-background="new 11.5 0 75 100" xml:space="preserve"><g><text transform="matrix(1 0 0 1 5.8066 87.1475)" font-family="Cochin-Italic" font-size="112.6105" fill="#999999">C</text><text transform="matrix(1 0 0 1 29.2212 72.208)" font-family="IowanOldStyle-Italic" font-size="80" fill="#999999">o</text></g></svg><input id="current-price-'+num+'" class="current-price" type="number" placeholder="1"/></div>');
+        $('#product-div').append('<div class="small-6 columns"><input id="product-name-'+num+'" type="text" placeholder="Item name"/></div><div class="currency-input small-3 columns"><span class="dollar-placeholder">$</span><input id="dollar-price-'+num+'" class="dollar-price" type="number" placeholder="10"/></div><div class="currency-input small-3 columns"><img class="current-placeholder" src="images/symbol.svg"/><input id="current-price-'+num+'" class="current-price" type="number" placeholder="1"/></div>');
 
           $(this).blur();
       });

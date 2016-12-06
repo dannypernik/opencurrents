@@ -180,9 +180,17 @@
       
         <div class="row center half-margin-top">
           <!--<input type="submit" class="button large round" value="Create account"/>-->
-          <a href="confirm-account"><button type="submit" class="button large round">Create account</button></a>
+          <button type="submit" class="demo-box_open signup-box_close button large round">Create account</button>
         </div>
       <!--</form>-->
+    </div>
+
+    <div id="demo-box" class="modal center small-12 medium-9 large-7 small-centered columns">
+      <div class="row center">
+        <h2 class="popup-title">This is a demo.</h2>
+        <p>Come see what we're working on. Most buttons will work, but don't bother entering information, as data is not yet being saved.</p>
+        <a href="confirm-account"><button type="submit" class="button large round">Continue</button></a>
+      </div>
     </div>
     
     <div id="suggestion-box" class="modal center small-12 medium-9 large-7 small-centered columns">
@@ -252,7 +260,7 @@
           }
         });
         
-        $('#signup-box, #suggestion-box').popup({
+        $('#signup-box, #suggestion-box, #demo-box').popup({
           vertical: 'top',
           transition: 'all 0.75s',
           scrolllock: false,

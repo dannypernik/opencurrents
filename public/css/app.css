@@ -129,8 +129,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .button:hover, .button:focus {
   color: #ffffff;
-  background-color: #0d5f79;
-  border: 1px solid #0d5f79;
+  background-color: #0f7190;
+  border: 1px solid #0f7190;
 }
 
 .button.secondary {
@@ -141,8 +141,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .button.secondary:hover, .button.secondary:focus {
   color: #ffffff;
-  background-color: #0b5167;
-  border: 1px solid #0b5167;
+  background-color: #0f7190;
+  border: 1px solid #0f7190;
 }
 
 table thead, table tfoot {
@@ -155,8 +155,8 @@ input[type='radio'] + label {
 }
 
 input[type='radio']:checked + label {
-  background-color: #0b5167;
-  border: 1px solid #0b5167;
+  background-color: #0f7190;
+  border: 1px solid #0f7190;
   color: #ffffff;
 }
 
@@ -244,6 +244,12 @@ label {
   left: 10px;
   top: 9px;
   }
+}
+
+/* fontawesome additions */
+
+.fa-sm {
+  font-size: 0.7rem;
 }
 
 /* Scandalous classes */
@@ -385,8 +391,8 @@ label {
 
 #home1 button:hover, button:focus {
   color: #ffffff;
-  background-color: #0b5167;
-  border: 1px solid #0b5167;
+  background-color: #0f7190;
+  border: 1px solid #0f7190;
 }
 
 #home2, #home3, #home4, #home5 {
@@ -418,7 +424,7 @@ label {
 }
 
 .white-caret:hover {
-  color: #0b5167;
+  color: #0f7190;
   transition: color 0.25s ease-out;
 }
 
@@ -585,17 +591,17 @@ a.list-group-item {
   transition: color 300ms ease-out; }
 
 .thumb-wrapper:hover #video-title {
-  color: #0b5167;
+  color: #0f7190;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
 }
 
 .thumb-wrapper:hover #play-poly {
-  fill: #0b5167;
+  fill: #0f7190;
 }
 
 .thumb-wrapper:hover #play-circle {
-  stroke: #0b5167;
+  stroke: #0f7190;
 }
 
 .play-intro_open {
@@ -624,13 +630,13 @@ a.list-group-item {
   transition: stroke 300ms ease-out; }
 
 #play-button:hover polygon {
-  fill: #0b5167; }
+  fill: #0f7190; }
 
 #play-button circle {
   stroke: #3c93ae; }
 
 #play-button:hover circle {
-  stroke: #0b5167; }
+  stroke: #0f7190; }
 
 #play-intro {
   margin: 5rem 0 0; }
@@ -808,8 +814,9 @@ a.list-group-item {
 .current-placeholder {
   display: inline-block;
   position: absolute;
-  top: 8px;
-  color: #888888;
+  top: 10px;
+  left: 10px;
+  color: #999999;
 }
 
 .dollar-placeholder {
@@ -820,12 +827,12 @@ a.list-group-item {
 }
 
 .dollar-price {
-  text-indent: 15px;
+  text-indent: 20px;
   min-width: 60px;
 }
 
 .current-price {
-  text-indent: 18px;
+  text-indent: 28px;
   min-width: 60px;
 }
 
@@ -845,7 +852,24 @@ a.list-group-item {
 /* nominate */
 
 .button.zeroclipboard-is-hover {
-  background-color: #0b5167;
-  border-color: #0b5167;
+  background-color: #0f7190;
+  border-color: #0f7190;
   color: #ffffff;
+}
+
+/* find-orgs */
+
+#cause-select {
+  width: 150px;
+}
+
+.org-img {
+  border-radius: 999px;
+  width: 33px;
+}
+
+@media screen and (min-width: 40em) {
+  .org-img {
+    width: 44px;
+  }
 }
