@@ -145,6 +145,18 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #0f7190;
 }
 
+.button.white {
+  background-color: #6ab5cc;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.button.white:hover {
+  background-color: #0f7190;
+  color: #ffffff;
+  border: 1px solid #0f7190;
+}
+
 table thead, table tfoot {
   color: #888888;
 }
@@ -552,12 +564,12 @@ a.list-group-item {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -6rem;
+  /*margin: 0 auto -6rem;*/
   position: relative;
 }
 
 #push {
-  height: 10rem;
+  /*height: 6rem;*/
 }
 
 .footer {
