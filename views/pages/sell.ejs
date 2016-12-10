@@ -22,7 +22,7 @@
           </div>
           
           <div class="currency-input small-3 medium-2 columns">
-            <img class="current-placeholder" src="images/symbol.svg"/>
+            <img class="current-placeholder" src="img/symbol.svg"/>
             
             <input id="custom-price" class="current-price" type="number" placeholder="0"/>
           </div>
@@ -44,7 +44,7 @@
             </div>
             
             <div class="currency-input small-3 medium-2 columns end">
-              <img class="current-placeholder three-qtr-margin-top" src="images/symbol.svg"/>
+              <img class="current-placeholder three-qtr-margin-top" src="img/symbol.svg"/>
               
               <input id="product-price-1" type="number" class="hidden-input current-price three-qtr-margin-top" placeholder="0" disabled>
             </div>
@@ -63,7 +63,7 @@
           </div>
 
           <div class="currency-input small-3 medium-2 columns end">
-            <img class="current-placeholder" src="images/symbol.svg"/>
+            <img class="current-placeholder" src="img/symbol.svg"/>
             <input id="product-price-1" type="number" class="hidden-input current-price" placeholder="0" disabled>
           </div>
         </div>
@@ -126,7 +126,7 @@
 
             price = $('#custom-price').val();
 
-            $('#products').prepend('<div id="product-row-'+num+'" class="row left"><div class="small-9 medium-7 medium-offset-2 columns"><input id="product-quantity-'+num+'" name="product-quantity" type="number" class="product-quantity inline" value="1" placeholder="0"/><span class="half-margin-left">x </span><button id="product-name-'+num+'" class="product-name three-qtr-margin-top button round small">'+name+'</button></div><div class="currency-input small-3 medium-2 columns end"><img class="current-placeholder three-qtr-margin-top" src="images/symbol.svg"/><input id="product-price-'+num+'" type="number" class="hidden-input current-price three-qtr-margin-top" placeholder="0" value="'+price+'"" disabled></div></div>');
+            $('#products').prepend('<div id="product-row-'+num+'" class="row left"><div class="small-9 medium-7 medium-offset-2 columns"><input id="product-quantity-'+num+'" name="product-quantity" type="number" class="product-quantity inline" value="1" placeholder="0"/><span class="half-margin-left">x </span><button id="product-name-'+num+'" class="product-name three-qtr-margin-top button round small">'+name+'</button></div><div class="currency-input small-3 medium-2 columns end"><img class="current-placeholder three-qtr-margin-top" src="img/symbol.svg"/><input id="product-price-'+num+'" type="number" class="hidden-input current-price three-qtr-margin-top" placeholder="0" value="'+price+'"" disabled></div></div>');
 
             $('#custom-price').val('');
             $('#require-price').hide();
