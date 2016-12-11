@@ -3,13 +3,13 @@ var app = express();
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
-app.set('port', (process.env.PORT || 8080));
+app.set('port', (process.env.PORT || 8888));
 
 app.use(express.static(__dirname + '/public'));
 app.use('/modules', express.static(__dirname + '/node_modules/'));
 
 app.get('/', function(req, res) {
-    res.render('pages/home');
+    res.render('pages/lead');
 });
 
 app.get('/:id', function(req, res) {
