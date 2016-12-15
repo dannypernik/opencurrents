@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 app.use('/modules', express.static(__dirname + '/node_modules/'));
 
 app.get('/', function(req, res) {
-    res.render('pages/lead');
+    res.render('pages/home');
 });
 
 app.get('/:id', function(req, res) {
