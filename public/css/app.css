@@ -16,7 +16,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #0e4886;
+  color: #1f4975;
 }
 
 .full-width {
@@ -90,10 +90,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #888888;
 }
 
-#container a:hover {
-  color: #1f4975;
-}
-
 .button {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -155,6 +151,15 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1f4975;
   color: #ffffff;
   border: 1px solid #1f4975;
+}
+
+.button.large {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.round {
+  border-radius: 99px;
 }
 
 table thead, table tfoot {
@@ -397,34 +402,6 @@ label {
   line-height: 1.6;
 }
 
-/*#home a {
-  font-weight: normal;
-}
-
-#home1 {
-  background-color: #42bdea;
-  color: #ffffff;
-  min-height: 100vh;
-}
-
-#home1 button {
-  background-color: #2a7d97;
-  border: 1px solid #2a7d97;
-  color: #ffffff;
-}
-
-#home1 button:hover, button:focus {
-  color: #ffffff;
-  background-color: #0f7190;
-  border: 1px solid #0f7190;
-}
-
-#home2, #home3, #home4, #home5 {
-  background-color: #ffffff;
-  color: #0c446f;
-  min-height: 100vh;
-}*/
-
 #home-logo {
   width: 600px;
 }
@@ -448,56 +425,47 @@ label {
   }
 }
 
-.round {
-  border-radius: 99px;
-}
-
-.button.large {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 /* Non-small header */
 
-  #header-sticky-wrapper {
-    height: 80px;
-    background-color: #ffffff;
-    z-index: 2;
-    border-bottom: 1px solid #42bdea;
-  }
-  
-  #header {
-    position: fixed;
-    top: 0;
-    height: 80px;
-    background-color: #ffffff;
-    z-index: 2;
-    border-bottom: 1px solid #42bdea;
-  }
-  
-  .header-spacer {
-    height: 80px;
-    border-bottom: 1px solid #42bdea;
-  }
-  
-  #header-logo {
-    padding-left: 0;
-    max-height: 79px;
-  }
+#header-sticky-wrapper {
+  height: 80px;
+  background-color: #ffffff;
+  z-index: 2;
+  border-bottom: 1px solid #42bdea;
+}
 
-  #header-menu {
-    margin-top: 1.625rem;
-  }
-  
-  .fa-bars, .fa-user-plus {
-    margin-right: 3rem;
-  }
+#header {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  background-color: #ffffff;
+  z-index: 2;
+  border-bottom: 1px solid #42bdea;
+}
 
-  #container {
-    margin-top: 80px;
-    margin-bottom: 24px;
-    text-align: center;
-  }
+.header-spacer {
+  height: 80px;
+  border-bottom: 1px solid #42bdea;
+}
+
+#header-logo {
+  padding-left: 0;
+  max-height: 79px;
+}
+
+#header-menu {
+  margin-top: 1.625rem;
+}
+
+.fa-bars, .fa-user-plus {
+  margin-right: 3rem;
+}
+
+#container {
+  margin-top: 80px;
+  margin-bottom: 24px;
+  text-align: center;
+}
 
 /* Small header */
 @media screen and (max-width: 40em) {
@@ -552,8 +520,7 @@ label {
   }
 }
 
-
-
+/* menu */
 
 #menu {
   background-color: #42bdea;
@@ -579,18 +546,13 @@ a.list-group-item {
   color: #1f4975;
 }
 
-/* Sticky footer */
+/* footer */
 
 #wrapper {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  /*margin: 0 auto -6rem;*/
   position: relative;
-}
-
-#push {
-  /*height: 6rem;*/
 }
 
 .footer {
@@ -607,6 +569,50 @@ a.list-group-item {
   z-index: 2;
   background-color: #42bdea;
 }
+  
+.modal {
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin-top: 4rem;
+  display: none;
+}
+
+/* Small titles */
+.title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.title-sub {
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+/* non-small titles */
+@media screen and (min-width: 40em) {
+  .title {
+    margin-top: 2.25rem;
+  }
+
+  .title-sub {
+    margin-top: 2.25rem;
+  }
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.popup-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* video button */
 
 .thumb-wrapper {
   position: relative;
@@ -701,48 +707,8 @@ a.list-group-item {
 .thumb-box {
   position: relative;
   width: 70px; }
-  
-.modal {
-  padding: 1rem;
-  border-radius: 4px;
-  background-color: #ffffff;
-  margin-top: 4rem;
-  display: none;
-}
 
-/* Small titles */
-.title {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.title-sub {
-  margin-top: 2rem;
-  margin-bottom: 0.25rem;
-  text-align: center;
-}
-
-/* non-small titles */
-@media screen and (min-width: 40em) {
-  .title {
-    margin-top: 2.25rem;
-  }
-
-  .title-sub {
-    margin-top: 2.25rem;
-  }
-}
-
-.subtitle {
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.popup-title {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+/* confirm-account */
 
 #verify-email {
   width: 80px;
