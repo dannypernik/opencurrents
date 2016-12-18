@@ -62,10 +62,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #888888;
 }
 
-.lead {
-  font-size: 100%;
-}
-
 /* Lead text for non-small screens */
 @media screen and (min-width: 40em) {
   .lead {
@@ -139,6 +135,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   background-color: #1f4975;
   border: 1px solid #1f4975;
+}
+
+.button.alert {
+  background-color: #993366;
+}
+
+.button.alert:hover, .button.alert:focus {
+  background-color: #5e1f3f;
 }
 
 .button.clear {
@@ -252,6 +256,41 @@ label {
   position: absolute;
   left: 10px;
   top: 5px;
+}
+
+.accordion-title {
+  font-size: 0.875rem;
+}
+
+.accordion-content {
+  color: #888888;
+}
+
+.accordion-content p {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.accordion-content p span {
+  float: right;
+}
+
+.accordion-content .button {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.accordion-title::before {
+  content: '';
+}
+
+.is-active > .accordion-title::before {
+  content: '';
+}
+
+/* Lead text for small screens */
+.lead {
+  font-size: 100%;
 }
 
 /* Align large checkboxes on non-small screens */   
@@ -464,7 +503,6 @@ label {
 #container {
   margin-top: 80px;
   margin-bottom: 24px;
-  text-align: center;
 }
 
 /* Small header */
@@ -516,7 +554,6 @@ label {
   #container {
     margin-top: 70px;
     margin-bottom: 24px;
-    text-align: center;
   }
 }
 
