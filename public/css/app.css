@@ -70,22 +70,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.white {
-  color: #ffffff;
-}
-
-.blue {
-  color: #42bdea;
-}
-
-.navy {
-  color: #1f4975;
-}
-
-.grey {
-  color: #888888;
-}
-
 .button {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -171,17 +155,6 @@ table thead, table tfoot {
   color: #888888;
 }
 
-input[type='radio'] + label {
-  margin-right: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-input[type='radio']:checked + label {
-  background-color: #1f4975;
-  border: 1px solid #1f4975;
-  color: #ffffff;
-}
-
 html input[disabled] {
   cursor: text;
   background-color: transparent;
@@ -237,6 +210,10 @@ label {
   color: #888888;
 }
 
+[type=radio]+label {
+  margin-right: 0.5rem;
+}
+
 .radio,
 .checkbox {
   position: relative;
@@ -257,6 +234,17 @@ label {
   position: absolute;
   left: 10px;
   top: 5px;
+}
+
+.styled-radio + label {
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.styled-radio:checked + label {
+  background-color: #1f4975;
+  border: 1px solid #1f4975;
+  color: #ffffff;
 }
 
 .accordion-title {
@@ -377,6 +365,30 @@ label {
 
 .three-margin-top {
   margin-top: 3rem;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.blue {
+  color: #42bdea;
+}
+
+.navy {
+  color: #1f4975;
+}
+
+.grey {
+  color: #888888;
+}
+
+.success {
+  color: #009900;
+}
+
+.alert {
+  color: #890045;
 }
 
 .center {
@@ -921,4 +933,28 @@ a.list-group-item {
   .org-img {
     width: 44px;
   }
+}
+
+/* volunteer-requests */
+
+.volunteer-confirm label {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.volunteer-confirm i {
+  transition: color 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.volunteer-confirm .accept:hover {
+  color: #009900;
+}
+
+.volunteer-confirm .decline:hover {
+  color: #890045;
+}
+
+.vol-status {
+  line-height: 2;
 }
