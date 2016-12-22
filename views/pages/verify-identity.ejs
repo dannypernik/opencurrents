@@ -61,7 +61,7 @@
           <div id="ssn-details" class="box row one-margin-bottom">
             <div class="medium-6 small-centered columns">
               <span>SSN:</span>
-              <input type="number" id="social-security-number" name="social-security-number" class="inline-input" placeholder="xxx-xx-xxxx"/>
+              <input type="text" id="social-security-number" name="social-security-number" class="inline-input" placeholder="123-45-6789" />
             </div>
           </div>
           
@@ -103,6 +103,9 @@
     
     <script type="text/javascript">
       $(document).ready(function(){
+
+        $('#social-security-number').mask('000-00-0000');
+
         $("select").change(function() {
           var id = $(this).val();
           if (id == "bank") {

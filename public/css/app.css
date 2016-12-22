@@ -514,9 +514,12 @@ label {
 }
 
 #container {
-  margin-top: 80px;
   margin-bottom: 24px;
   text-align: center;
+}
+
+#wrapper {
+  padding-top: 80px;
 }
 
 /* Small header */
@@ -566,8 +569,11 @@ label {
   }
 
   #container {
-    margin-top: 70px;
     margin-bottom: 24px;
+  }
+
+  #wrapper {
+    padding-top: 70px;
   }
 }
 
@@ -606,9 +612,13 @@ a.list-group-item {
   position: relative;
 }
 
-.footer {
+#push {
   height: 6rem;
-  padding: 1rem;
+}
+
+#footer {
+  height: 6rem;
+  padding: 1rem 1rem 1.5rem;
   background: #42bdea;
   color: #ffffff;
 }
@@ -617,7 +627,7 @@ a.list-group-item {
   position: fixed;
   bottom: 0;
   height: 24px;
-  z-index: 2;
+  z-index:  2;
   background-color: #42bdea;
 }
   

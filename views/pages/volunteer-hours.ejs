@@ -21,7 +21,7 @@
         <div class="row center">
           <div class="left medium-9 small-centered columns">
             <div class="small-12 medium-8 columns">
-              <label for="user-orgs" class="inline">Organization name</label>
+              <label for="user-orgs" class="inline">Volunteering for:</label>
               
               <select id="user-orgs">
                 <option disabled selected hidden>Select organization</option>
@@ -102,7 +102,7 @@
         </div>
 
         <div class="row center one-margin-top">
-          <button id="add-org" type="submit" class="add-org-popup_close button round">Request org</button>
+          <button id="add-org" type="submit" class="add-org-popup_close button round">Request approval</button>
           <a href="nominate" class="button round secondary">Nominate new org</a>
         </div>
       <!--</form>-->
@@ -111,6 +111,8 @@
     <script type="text/javascript">
       $(document).ready(function(){
         
+        $("#volunteer-date").mask("9999-99-99");
+
         $('#volunteer-date').datepicker({ 
           dateFormat: 'yy-mm-dd',
         }).datepicker("setDate", new Date());
@@ -126,7 +128,7 @@
         });
       });
     </script>
-    
+
     <script>
       ( function ( $ ) {
         // Initialize Slidebars
