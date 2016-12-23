@@ -171,6 +171,14 @@ textarea:focus {
   border: 1px solid #1f4975;
 }
 
+input[type='checkbox'] {
+  background-color: #42bdea;
+}
+
+input[type='checkbox']:checked {
+  background-color: #42bdea;
+}
+
 select {
   color: #1f4975;
   border-color: #42bdea;
