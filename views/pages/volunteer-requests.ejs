@@ -14,16 +14,18 @@
         </div>
         
         <div class="row one-margin-bottom">
-          <div class="left small-6 medium-4 medium-offset-2 columns">
+          <div class="left small-7 medium-5 medium-offset-2 columns">
             <a href="edit-hours" title="View hours recorded">Firstname Lastname</a>
           </div>
 
-          <div class="right small-6 medium-4 columns end">
+          <div class="right small-5 medium-3 columns end">
             <div class="volunteer-confirm">
               <input type="radio" id="vol-accept-1" name="vol-confirm-1" value="" class="vol-radio hidden"/>
                 <label for="vol-accept-1"><i class="accept fa fa-lg blue fa-check-circle"></i></label>
               <input type="radio" id="vol-decline-1" name="vol-confirm-1" value="" class="vol-radio hidden"/>
                 <label for="vol-decline-1"><i class="decline fa fa-lg grey fa-times-circle"></i></label>
+              <input type="radio" id="vol-question-1" name="vol-confirm-1" value="" class="vol-radio hidden"/>
+                <label for="vol-question-1"><i class="question fa fa-lg grey fa-question-circle"></i></label>
             </div>
 
             <div class="accepted hidden">
@@ -32,22 +34,28 @@
 
             <div class="declined hidden">
               <label class="vol-status">Declined. <a class="undo">Undo</a></label>
+            </div>
+
+            <div class="requested hidden">
+              <label class="vol-status">Deferred. <a class="undo">Undo</a></label>
             </div>
           </div>
         </div>
 
         <!-- change input names and ids, and label for, for each volunteer -->
         <div class="row one-margin-bottom">
-          <div class="left small-6 medium-4 medium-offset-2 columns">
+          <div class="left small-7 medium-5 medium-offset-2 columns">
             <a href="edit-hours" title="View hours recorded">Firstname Lastname</a>
           </div>
 
-          <div class="right small-6 medium-4 columns end">
+          <div class="right small-5 medium-3 columns end">
             <div class="volunteer-confirm">
               <input type="radio" id="vol-accept-2" name="vol-confirm-2" value="" class="vol-radio hidden"/>
                 <label for="vol-accept-2"><i class="accept fa fa-lg blue fa-check-circle"></i></label>
               <input type="radio" id="vol-decline-2" name="vol-confirm-2" value="" class="vol-radio hidden"/>
                 <label for="vol-decline-2"><i class="decline fa fa-lg grey fa-times-circle"></i></label>
+              <input type="radio" id="vol-question-2" name="vol-confirm-2" value="" class="vol-radio hidden"/>
+                <label for="vol-question-2"><i class="question fa fa-lg grey fa-question-circle"></i></label>
             </div>
 
             <div class="accepted hidden">
@@ -56,6 +64,10 @@
 
             <div class="declined hidden">
               <label class="vol-status">Declined. <a class="undo">Undo</a></label>
+            </div>
+
+            <div class="requested hidden">
+              <label class="vol-status">Deferred. <a class="undo">Undo</a></label>
             </div>
           </div>
         </div>
@@ -96,8 +108,7 @@
       $('.accept').click(function(){
         $(this).parents('.volunteer-confirm').fadeOut(333,function(){
           $(this).siblings('.accepted').fadeIn(333);
-        });
-        
+        }); 
       });
 
       $('.decline').click(function(){
@@ -106,8 +117,14 @@
         });
       });
 
+      $('.question').click(function(){
+        $(this).parents('.volunteer-confirm').fadeOut(333,function(){
+          $(this).siblings('.requested').fadeIn(333);
+        }); 
+      });
+
       $('.undo').click(function(){
-        $(this).parents('.accepted, .declined').fadeOut(333,function(){
+        $(this).parents('.accepted, .declined, .requested').fadeOut(333,function(){
           $(this).siblings('.volunteer-confirm').fadeIn(333);
         });
         $(this).parents('.right').find('input').attr('checked',false);
