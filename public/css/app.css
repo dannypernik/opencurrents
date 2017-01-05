@@ -452,54 +452,6 @@ label {
   white-space: nowrap;
 }
 
-/* Home */
-
-#home {
-  display: block;
-  overflow: visible;
-  background-color: #42bdea;
-  color: #ffffff;
-  min-height: 100vh;
-}
-
-#home p {
-  font-size: 125%;
-  line-height: 1.6;
-}
-
-#home-logo {
-  width: 560px;
-  margin-top: 1rem;
-}
-
-#home-title {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-#home-symbol {
-  vertical-align: -3px;
-  margin-left: 0.125rem;
-  margin-right: 0.125rem;
-  height: 1.25rem;
-}
-
-/* Non-small home symbol */
-@media screen and (min-width: 40em) {
-  #home-symbol {
-    height: 1.5rem;
-  }
-}
-
-#intro-5-1, #intro-5-2, #intro-5-3 {
-  min-height: 100vh;
-}
-
-#intro-5-2 {
-  background-color: #ffffff;
-  color: #1f4975;
-}
-
 /* small header */
 
 #header {
@@ -748,6 +700,65 @@ a.list-group-item {
 .thumb-box {
   position: relative;
   width: 70px; }
+
+/* home */
+
+#home {
+  display: block;
+  overflow: visible;
+  background-color: #42bdea;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+#home p {
+  font-size: 125%;
+  line-height: 1.6;
+}
+
+#home-logo {
+  width: 560px;
+  margin-top: 1rem;
+}
+
+#home-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#home-symbol {
+  vertical-align: -3px;
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+  height: 1.25rem;
+}
+
+/* Non-small home symbol */
+@media screen and (min-width: 40em) {
+  #home-symbol {
+    height: 1.5rem;
+  }
+}
+
+#intro-5-1, #intro-5-2, #intro-5-3 {
+  min-height: 100vh;
+}
+
+#intro-5-2 {
+  background-color: #ffffff;
+  color: #1f4975;
+}
+
+/* login */
+
+#remember-label {
+  padding-left: 0; 
+}
+
+#remember-checkbox {
+  position: static;
+  margin-right: 1rem;
+}
 
 /* confirm-account */
 
