@@ -264,7 +264,7 @@ label {
   color: #888888;
 }
 
-.accordion-content p {
+#volunteer-list .accordion-content p {
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
 }
