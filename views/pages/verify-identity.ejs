@@ -18,8 +18,8 @@
           <div class="row one-margin-bottom">
             <div class="small-10 medium-5 small-centered columns">
               <select>
-                <option value="bank">Connect bank account</option>
                 <option value="passport">Passport ID number</option>
+                <option value="bank">Connect bank account</option>
                 <option value="ssn">Social security number</option>
               </select>
             </div>
@@ -43,7 +43,7 @@
             </div>
           </div>
           
-          <div id="bank-details" class="box row">
+          <div id="bank-details" class="box row hidden">
             <div class="medium-6 small-centered columns">
               <span>Routing number: </span>
               <input type="number" id="routing-number" name="routing-number" placeholder="123456789" class="inline-input"/>
@@ -58,7 +58,7 @@
             </div>
           </div>
           
-          <div id="ssn-details" class="box row one-margin-bottom">
+          <div id="ssn-details" class="box row hidden one-margin-bottom">
             <div class="medium-6 small-centered columns">
               <span>SSN:</span>
               <input type="text" id="social-security-number" name="social-security-number" class="inline-input" placeholder="123-45-6789" />

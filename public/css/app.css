@@ -257,6 +257,11 @@ label {
 }
 
 .accordion-title {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#volunteer-list li .accordion-title {
   font-size: 0.875rem;
 }
 
@@ -776,10 +781,6 @@ a.list-group-item {
   width: 112px;
 }
 
-#passport-details, #ssn-details {
-  display: none;
-}
-
 /* org-signup */
 
 #org-type {
@@ -966,9 +967,20 @@ a.list-group-item {
 
 /* org-home */
 
-#h5-symbol {
+.h5-symbol {
   vertical-align: -3px;
   margin-left: 0.375rem;
   margin-right: 0.125rem;
   height: 1.25rem;
+}
+
+/* community */
+
+.atcb-list {
+  border: 1px solid #1f4975;
+  border-radius: 4px;
+}
+
+.atcb-item {
+  padding: 0.25px;
 }
