@@ -977,10 +977,15 @@ a.list-group-item {
 /* community */
 
 .atcb-list {
-  border: 1px solid #1f4975;
+  background-color: #ffffff;
+  border: 1px solid #42bdea;
   border-radius: 4px;
+  top: 130%;
 }
 
 .atcb-item {
-  padding: 0.25px;
+  color: #ffffff;
+  padding: 0.25rem;
+  margin-left: 0.25rem;
+  border-radius: 4px;
 }
