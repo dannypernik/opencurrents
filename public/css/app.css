@@ -989,3 +989,13 @@ a.list-group-item {
   margin-left: 0.25rem;
   border-radius: 4px;
 }
+
+i:hover ~ .addtocalendar {
+  color: #1f4975;
+}
+
+.atcb-link:focus~ul,
+.atcb-link:active~ul,
+.atcb-list:hover{
+    visibility:visible;
+}
